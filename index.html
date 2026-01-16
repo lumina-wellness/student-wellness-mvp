@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2b6777">
   <title>Student Wellness Intelligence Platform</title>
   <link rel="stylesheet" href="style.css">
 </head>
+  <script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+  }
+</script>
 <body>
 
 <h1>Student Wellness Intelligence Platform</h1>
@@ -182,3 +189,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
